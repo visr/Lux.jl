@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><title>Experimental · Lux</title><script async src="https://www.googletagmanager.com/gtag/js?id=G-Q8GYTEVTZ2"></script><script>  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-Q8GYTEVTZ2', {'page_path': location.pathname + location.search + location.hash});
+</script><script data-outdated-warner src="../../assets/warner.js"></script><link href="https://cdnjs.cloudflare.com/ajax/libs/lato-font/3.0.0/css/lato-font.min.css" rel="stylesheet" type="text/css"/><link href="https://cdnjs.cloudflare.com/ajax/libs/juliamono/0.044/juliamono.css" rel="stylesheet" type="text/css"/><link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/fontawesome.min.css" rel="stylesheet" type="text/css"/><link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/solid.min.css" rel="stylesheet" type="text/css"/><link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/brands.min.css" rel="stylesheet" type="text/css"/><link href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.13.11/katex.min.css" rel="stylesheet" type="text/css"/><script>documenterBaseURL="../.."</script><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js" data-main="../../assets/documenter.js"></script><script src="../../siteinfo.js"></script><script src="../../../versions.js"></script><link class="docs-theme-link" rel="stylesheet" type="text/css" href="../../assets/themes/documenter-dark.css" data-theme-name="documenter-dark" data-theme-primary-dark/><link class="docs-theme-link" rel="stylesheet" type="text/css" href="../../assets/themes/documenter-light.css" data-theme-name="documenter-light" data-theme-primary/><script src="../../assets/themeswap.js"></script><link href="../../assets/custom.css" rel="stylesheet" type="text/css"/></head><body><div id="documenter"><nav class="docs-sidebar"><div class="docs-package-name"><span class="docs-autofit"><a href="../../">Lux</a></span></div><form class="docs-search" action="../../search/"><input class="docs-search-query" id="documenter-search-query" name="q" type="text" placeholder="Search docs"/></form><ul class="docs-menu"><li><a class="tocitem" href="../../">Lux: Explicitly Parameterized Neural Networks</a></li><li><span class="tocitem">Introduction</span><ul><li><a class="tocitem" href="../../introduction/overview/">All about Lux</a></li><li><a class="tocitem" href="../../introduction/ecosystem/">Ecosystem</a></li><li><a class="tocitem" href="../../introduction/update_guide/">Update Guide</a></li></ul></li><li><span class="tocitem">Examples</span><ul><li><input class="collapse-toggle" id="menuitem-3-1" type="checkbox"/><label class="tocitem" for="menuitem-3-1"><span class="docs-label">Beginner</span><i class="docs-chevron"></i></label><ul class="collapsed"><li><a class="tocitem" href="../../examples/generated/beginner/Basics/main/">Julia &amp; Lux for the Uninitiated</a></li><li><a class="tocitem" href="../../examples/generated/beginner/SimpleRNN/main/">Training a Simple LSTM</a></li></ul></li><li><input class="collapse-toggle" id="menuitem-3-2" type="checkbox"/><label class="tocitem" for="menuitem-3-2"><span class="docs-label">Intermediate</span><i class="docs-chevron"></i></label><ul class="collapsed"><li><a class="tocitem" href="../../examples/generated/intermediate/NeuralODE/main/">MNIST NeuralODE Classification</a></li><li><a class="tocitem" href="../../examples/generated/intermediate/BayesianNN/main/">Bayesian Neural Network</a></li></ul></li><li><span class="tocitem">Advanced</span></li><li><a class="tocitem" href="../../examples/">Additional Examples</a></li></ul></li><li><span class="tocitem">API</span><ul><li><a class="tocitem" href="../layers/">Layers</a></li><li><a class="tocitem" href="../functional/">Functional</a></li><li><a class="tocitem" href="../core/">Core</a></li><li><a class="tocitem" href="../utilities/">Utilities</a></li><li class="is-active"><a class="tocitem" href>Experimental</a><ul class="internal"><li><a class="tocitem" href="#Experimental-Features"><span>Experimental Features</span></a></li><li><a class="tocitem" href="#Lux.@layerdef-API"><span><code>Lux.@layerdef</code> API</span></a></li><li><a class="tocitem" href="#Index"><span>Index</span></a></li></ul></li></ul></li><li><span class="tocitem">Design Docs</span><ul><li><a class="tocitem" href="../../design/documentation/">Documentation</a></li><li><a class="tocitem" href="../../design/recurrent/">Recurrent Neural Networks</a></li><li><a class="tocitem" href="../../design/core/">Add new functionality to Lux</a></li></ul></li></ul><div class="docs-version-selector field has-addons"><div class="control"><span class="docs-label button is-static is-size-7">Version</span></div><div class="docs-selector control is-expanded"><div class="select is-fullwidth is-size-7"><select id="documenter-version-selector"></select></div></div></div></nav><div class="docs-main"><header class="docs-navbar"><nav class="breadcrumb"><ul class="is-hidden-mobile"><li><a class="is-disabled">API</a></li><li class="is-active"><a href>Experimental</a></li></ul><ul class="is-hidden-tablet"><li class="is-active"><a href>Experimental</a></li></ul></nav><div class="docs-right"><a class="docs-edit-link" href="https://github.com/avik-pal/Lux.jl/blob/main/docs/src/api/experimental.md" title="Edit on GitHub"><span class="docs-icon fab"></span><span class="docs-label is-hidden-touch">Edit on GitHub</span></a><a class="docs-settings-button fas fa-cog" id="documenter-settings-button" href="#" title="Settings"></a><a class="docs-sidebar-button fa fa-bars is-hidden-desktop" id="documenter-sidebar-button" href="#"></a></div></header><article class="content" id="documenter-page"><h2 id="Experimental-Features"><a class="docs-heading-anchor" href="#Experimental-Features">Experimental Features</a><a id="Experimental-Features-1"></a><a class="docs-heading-anchor-permalink" href="#Experimental-Features" title="Permalink"></a></h2><div class="admonition is-warning"><header class="admonition-header">Warning</header><div class="admonition-body"><p>These features are relatively new additions to <code>Lux</code>, and as such haven&#39;t been pressure tested enough. We recommend users to carefully go through these docs, since they highlight some of the common gotchas when using these features. As always, if something doesn&#39;t work and the documentation doesn&#39;t explicitly mention that it shouldn&#39;t work, please file an issue</p></div></div><h2 id="Lux.@layerdef-API"><a class="docs-heading-anchor" href="#Lux.@layerdef-API"><code>Lux.@layerdef</code> API</a><a id="Lux.@layerdef-API-1"></a><a class="docs-heading-anchor-permalink" href="#Lux.@layerdef-API" title="Permalink"></a></h2><article class="docstring"><header><a class="docstring-binding" id="Lux.@layerdef" href="#Lux.@layerdef"><code>Lux.@layerdef</code></a> — <span class="docstring-category">Macro</span></header><section><div><p>An Experimental API to make it easier to write Lux models.</p><p><strong>Example</strong></p><pre><code class="language-julia hljs">using Lux, Random, Zygote, NNlib
+
+Lux.@layerdef function MyCustomModel((x, y)::T) where {T}
+    @assert size(x, 1) == 2 &amp;&amp; size(y, 1) == 2
+    a = Dense(3, 3, relu)(Dense(2, 3)(x) .+ Dense(2, 3, relu)(x)) .- Dense(2, 3, gelu)(x)
+    b = Dense(3, 2, sigmoid)(a)
+    c = Dense(2, 2, relu)(y)
+    return b .+ c
+end
+
+model = MyCustomModel()
+
+ps, st = Lux.setup(Random.default_rng(), model)
+x, y = randn(Float32, 2, 1), randn(Float32, 2, 1)
+
+model((x, y), ps, st)</code></pre><p><strong>Verifying Generated Code</strong></p><div class="admonition is-success"><header class="admonition-header">Tip</header><div class="admonition-body"><p>Since this is an highly experimental feature, we recommend always manually verifying the generated model. This can be done simply using <code>@macroexpand Lux.@layerdef ...</code></p></div></div><pre><code class="language-julia-repl hljs">julia&gt; @macroexpand Lux.@layerdef function MyCustomModel((x, y)::T) where {T}
+           @assert size(x, 1) == 2 &amp;&amp; size(y, 1) == 2
+           a = Dense(3, 3, relu)(Dense(2, 3)(x) .+ Dense(2, 3, relu)(x)) .- Dense(2, 3, gelu)(x)
+           b = Dense(3, 2, sigmoid)(a)
+           c = Dense(2, 2, relu)(y)
+           return b .+ c
+       end
+quote
+    struct MyCustomModel{__dense_1_type, __dense_2_type, __dense_3_type, __dense_4_type, __dense_5_type, __dense_6_type} &lt;: Lux.AbstractExplicitContainerLayer{(:dense_1, :dense_2, :dense_3, :dense_4, :dense_5, :dense_6)}
+        dense_1::__dense_1_type
+        dense_2::__dense_2_type
+        dense_3::__dense_3_type
+        dense_4::__dense_4_type
+        dense_5::__dense_5_type
+        dense_6::__dense_6_type
+    end
+    function MyCustomModel(; )
+        return MyCustomModel(Dense(3, 3, relu), Dense(2, 3), Dense(2, 3, relu), Dense(2, 3, gelu), Dense(3, 2, sigmoid), Dense(2, 2, relu))
+    end
+    function (mandrill::MyCustomModel)((x, y)::T, ps::Union{Lux.ComponentArray, NamedTuple}, st::NamedTuple; ) where T
+        if size(x, 1) == 2 &amp;&amp; size(y, 1) == 2
+            nothing
+        else
+            Base.throw(Base.AssertionError(&quot;size(x, 1) == 2 &amp;&amp; size(y, 1) == 2&quot;))
+        end
+        (wildebeest, camel) = mandrill.dense_4(x, ps.dense_4, st.dense_4)
+        (antelope, gaur) = mandrill.dense_3(x, ps.dense_3, st.dense_3)
+        (rhinoceros, ibis) = mandrill.dense_2(x, ps.dense_2, st.dense_2)
+        (mallard, jellyfish) = mandrill.dense_1(rhinoceros .+ antelope, ps.dense_1, st.dense_1)
+        a = mallard .- wildebeest
+        (hamster, monkey) = mandrill.dense_5(a, ps.dense_5, st.dense_5)
+        b = hamster
+        (wasp, sanddollar) = mandrill.dense_6(y, ps.dense_6, st.dense_6)
+        c = wasp
+        return (b .+ c, NamedTuple{(:dense_1, :dense_2, :dense_3, :dense_4, :dense_5, :dense_6)}((jellyfish, ibis, gaur, camel, monkey, sanddollar)))
+    end
+end</code></pre><p><strong>What not to do while writing <code>layerdef</code>ed layers?</strong></p><p>Here are some common cases where <code>@layerdef</code> will silently fail to generate the correct code. (Encountered some additional cases, open an issue so that we can solve it or expand this list)</p><ol><li><strong>Imcomplete Layer Calls</strong>: All layer calls must be complete, i.e. the following is not allowed:</li></ol><pre><code class="language-julia hljs">Lux.@layerdef function ThisModelDoesNotWork(x)
+    @assert size(x, 1) == 2 &amp;&amp; size(y, 1) == 2
+    shared = Dense(2, 3, gelu)
+    a = Dense(3, 3, relu)(shared(x) .+ Dense(2, 3, relu)(x)) .- shared(x)
+    b = Dense(3, 2, sigmoid)(a)
+    return b
+end</code></pre><p>Instead write it as:</p><pre><code class="language-julia hljs">Lux.@layerdef function ThisModelWorks(x)
+    @assert size(x, 1) == 2 &amp;&amp; size(y, 1) == 2
+    shared = Dense(2, 3, gelu)(x)
+    a = Dense(3, 3, relu)(shared .+ Dense(2, 3, relu)(x)) .- shared
+    b = Dense(3, 2, sigmoid)(a)
+    return b
+end</code></pre><ol><li><strong>Creating layers without <code>=</code></strong>: All layer definitions must be preceeded by <code>=</code>. Anything else be it <code>return</code>, <code>.+=</code>. <code>.=</code>, etc. is not allowed.</li></ol><pre><code class="language-julia hljs"># Invalid
+Lux.@layerdef function WrongReturn(x)
+    return Dense(2, 2)(x) .+ Dense(2, 2)(x)
+end
+
+Lux.@layerdef WrongOneLiner(x) = Dense(2, 2)(x) .+ Dense(2, 2)(x)
+
+# Valid
+Lux.@layerdef function CorrectReturn(x)
+    x = Dense(2, 2)(x) .+ Dense(2, 2)(x)
+    return x
+end</code></pre><p><strong>Deviations from <code>flax.linen.compact</code></strong></p><p>This is heavily inspired by <a href="https://flax.readthedocs.io/en/latest/design_notes/module_lifecycle.html?highlight=compact#compact-modules">flax.linen.compact</a>, though the way this works is entirely different from flax.</p><ul><li>Unlike Flax, in Lux.@layerdef we still need to use the complete API to define the model. We don&#39;t perform automatic shape inference at this point. (This is a planned feature for future releases).</li><li>We don&#39;t allow specifying names for each layer.</li><li>Conditionals are not an issue</li></ul><p><strong>Shared Parameters / Layer Definition API</strong></p><p>Use <code>←</code> (type <code>\leftarrow</code> followed by a tab) to declare a new layer. For Example:</p><pre><code class="language-julia hljs">Lux.@layerdef function MySharedLayers((x, y))
+    s1 ← Dense(2, 2)
+    s2 ← Dense(2, 2)
+    x = s1(x) .+ s2(x) .- s1(y)
+    return x
+end</code></pre><p><strong>Known Issues &amp; Workarounds</strong></p><ul><li>If definining a <code>@layerdef</code> containing only 1 layer, there is a syntax error <code>ERROR: syntax: function argument and static parameter names must be distinct around &lt;line&gt;</code>. To workaround this, use <code>@macroexpand</code> and copy-paste the generated code</li></ul><div class="admonition is-warning"><header class="admonition-header">Warning</header><div class="admonition-body"><p>This is an experimental API. It is likely to have bugs and untested edge cases. If you find the generated code to be incorrect, please file an issue.</p></div></div></div><a class="docs-sourcelink" target="_blank" href="https://github.com/avik-pal/Lux.jl/blob/b83a632190d820c40b8a679f0e0d8c93bfd43b4a/src/contrib/layerdef.jl#L3-L144">source</a></section></article><h3 id="Showcase"><a class="docs-heading-anchor" href="#Showcase">Showcase</a><a id="Showcase-1"></a><a class="docs-heading-anchor-permalink" href="#Showcase" title="Permalink"></a></h3><ul><li><a href="/examples/SimpleRNN/main.jl"><code>SimpleRNN</code></a> example rewitten using <code>@layerdef</code></li></ul><pre><code class="language-julia hljs">using Lux, Random, NNlib
+
+Lux.@layerdef function SpiralClassifier(x::AbstractArray{T, 3}) where {T}
+    lstm_cell ← LSTMCell(2 =&gt; 8)
+    h, c = lstm_cell(view(x, :, 1, :))
+    for i in 1:size(x, 2)
+        h, c = lstm_cell(view(x, :, i, :), h, c)
+    end
+    y = Dense(8, 2, sigmoid)(h)
+    return vec(y)
+end
+
+model = SpiralClassifier()
+
+x = randn(Float32, 2, 4, 1)
+ps, st = Lux.setup(Random.default_rng(), model)
+
+model(x, ps, st)</code></pre><pre class="documenter-example-output"><code class="nohighlight hljs ansi">(Float32[0.5464334, 0.6516966], (dense_1 = NamedTuple(), lstmcell_1 = (rng = Random.Xoshiro(0x08859d3b986ade14, 0xf3750638b584f6f1, 0x6941ec956ae609c5, 0x6c479b4c4706c2a0),)))</code></pre><h2 id="Index"><a class="docs-heading-anchor" href="#Index">Index</a><a id="Index-1"></a><a class="docs-heading-anchor-permalink" href="#Index" title="Permalink"></a></h2><ul><li><a href="#Lux.@layerdef"><code>Lux.@layerdef</code></a></li></ul></article><nav class="docs-footer"><a class="docs-footer-prevpage" href="../utilities/">« Utilities</a><a class="docs-footer-nextpage" href="../../design/documentation/">Documentation »</a><div class="flexbox-break"></div><p class="footer-message">Powered by <a href="https://github.com/JuliaDocs/Documenter.jl">Documenter.jl</a> and the <a href="https://julialang.org/">Julia Programming Language</a>.</p></nav></div><div class="modal" id="documenter-settings"><div class="modal-background"></div><div class="modal-card"><header class="modal-card-head"><p class="modal-card-title">Settings</p><button class="delete"></button></header><section class="modal-card-body"><p><label class="label">Theme</label><div class="select"><select id="documenter-themepicker"><option value="documenter-light">documenter-light</option><option value="documenter-dark">documenter-dark</option></select></div></p><hr/><p>This document was generated with <a href="https://github.com/JuliaDocs/Documenter.jl">Documenter.jl</a> version 0.27.19 on <span class="colophon-date" title="Saturday 11 June 2022 04:58">Saturday 11 June 2022</span>. Using Julia version 1.7.3.</p></section><footer class="modal-card-foot"></footer></div></div></div></body></html>
